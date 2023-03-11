@@ -1,5 +1,10 @@
 {
     "require": {
         "symfony/validator": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "src/Classes"
+        }
     }
 }
