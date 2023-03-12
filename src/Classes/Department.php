@@ -1,11 +1,10 @@
 <?php 
 namespace Classes;
-use Classes\Employee;
 use ArrayObject;
 
     class Department{
-        private $name_of_department = NULL;
-        private $workers = NULL;
+        private $name_of_department;
+        private $workers;
         public function __construct($name,$List_Workers){
             $this->name_of_department=$name;
             $this->workers=new ArrayObject($List_Workers);
@@ -24,3 +23,4 @@ use ArrayObject;
             return $sum;
         }
     }
+?>

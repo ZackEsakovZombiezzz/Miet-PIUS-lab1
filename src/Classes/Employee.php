@@ -15,7 +15,7 @@
         private $salary_employee = NULL;
         private $DOE = NULL; // DOE-date of employment - дата принятие на работу
     
-        function __construct($id_employee, $name_employee,$salary_employee,$DOE){
+        public function __construct($id_employee, $name_employee,$salary_employee,$DOE){
             $now = new \DateTime();
             $validator = Validation::createValidator();
             $violation = $validator->validate($id_employee,[
@@ -87,5 +87,7 @@
             
         }
     }
+
+    ?>
     
     

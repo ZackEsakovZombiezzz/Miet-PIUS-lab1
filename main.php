@@ -37,14 +37,14 @@
             $departament_max=array($departament[$i]);
             $max=$tempory;
         }
-        else if ($tempory==$max){
+        elseif ($tempory==$max){
             array_push($departament_max,$departament[$i]);
         }
         if($tempory<$min){
             $departament_min=array($departament[$i]);
             $min=$tempory;
         }
-        else if ($tempory==$min){
+        elseif ($tempory==$min){
             array_push($departament_min,$departament[$i]);
         }
     }
@@ -68,3 +68,4 @@
             echo "<p> Departament with min ".$temp->get_Name_of_department()." with sum of Salary expenses ".$temp->getSalary_expenses()."</p>";
         }
     }
+    ?>
